@@ -1,0 +1,28 @@
+body {
+    --color-bg: white;
+    --color-texto: #000000;
+}
+
+body.dark-theme {
+    --color-bg: rgb(47, 47, 47);
+    --color-texto: white;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        --color-bg: rgb(47, 47, 47);
+        --color-texto: #ffffff;
+    }
+    body.light-theme {
+        --color-bg: #ffffff;
+        --color-texto: #030000;
+    }
+}
+
+body {
+    background-color: var(--color-bg);
+}
+
+h1 {
+    color: var(--color-texto);
+}
